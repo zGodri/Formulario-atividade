@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <form name="formulario" method="get">
+            <h3>Digite seu CPF:</h3>
+            <input type="text" name="cpf" 
+                pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" 
+                title="Digite um CPF no formato: xxx.xxx.xxx-xx" 
+                required>
+                
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" placeholder="Seu nome completo" required>
+            
+            <label for="email"><h3>E-mail</h3></label>
+            <input type="email" id="email" name="email" placeholder="seuemail@dominio.com" required>
+            
+            <label for="menssagem">Mensagem</label>
+            <textarea name="menssagem" id="menssagem" rows="4" placeholder="Escreva sua mensagem aqui..." required></textarea>
+            
+            <input type="submit" value="Verificar">
+        </form>
+    </main>
+</body>
+</html>
